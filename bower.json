@@ -1,0 +1,20 @@
+{
+  "name": "application-name",
+  "author": "Joe Bloggs <jbloggs@example.com>",
+  "dependencies": {
+    "check-type": "~0.4.9",
+    "requirejs": "~2.1.14",
+    "almond": "~0.2.9",
+    "lodash": "~2.4.1",
+    "backbone": "~1.1.2",
+    "jquery": "~2.1.1"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.18.2",
+    "sinonjs-built": "~1.8.2",
+    "sinon-chai": "~2.5.0",
+    "chai-jquery": "~1.2.2"
+  },
+  "private": true
+}

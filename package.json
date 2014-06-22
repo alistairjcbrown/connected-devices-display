@@ -1,0 +1,13 @@
+{
+  "name": "application-name",
+  "author": "Example Author <hello@example.com>",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-contrib-requirejs": "^0.4.4",
+    "grunt-mocha": "^0.4.11",
+    "load-grunt-tasks": "^0.4.0",
+    "rjs-build-analysis": "^0.0.3"
+  },
+  "private": true
+}
