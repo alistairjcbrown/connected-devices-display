@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "author": "Joe Bloggs <jbloggs@example.com>",
+  "name": "base-js-app",
+  "author": "Example Author <hello@example.com>",
   "dependencies": {
     "check-type": "~0.4.9",
     "requirejs": "~2.1.14",
