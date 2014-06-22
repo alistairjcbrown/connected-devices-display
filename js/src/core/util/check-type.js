@@ -1,5 +1,5 @@
 /**
- *  Check Type
+ *  Check-Type
  *
  *  Wrapper file for check-type lib
  *  This initialises check-type with lodash and provides a location for

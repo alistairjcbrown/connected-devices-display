@@ -4,33 +4,46 @@ define(function() {
     // Calling require.config in this way is necessary for the build process
     require.config({
 
-        baseUrl: "./js",
-        paths: {
+        "baseUrl": "./js",
+        "paths": {
             // Shimmed / Global libs
-            //"underscore": "src/core/shim/underscore",
-            "lodash-private":     "src/core/shim/lodash",
-            "jquery-private":     "src/core/shim/jquery",
-            "backbone-private":   "src/core/shim/backbone",
+            //"underscore":     "src/core/shim/underscore",
+            "lodash-local":   "src/core/shim/lodash",
+            "jquery-local":   "src/core/shim/jquery",
+            "backbone-local": "src/core/shim/backbone",
 
             // AMD libs
             "check-type": "src/core/util/check-type",
 
             // Testing libs
+            "mocha-local": "tests/core/shim/mocha",
             "sinon":       "third-party/sinonjs-built/pkg/sinon",
             "chai":        "third-party/chai/chai",
             "sinon-chai":  "third-party/sinon-chai/lib/sinon-chai",
-            "jquery-chai":  "third-party/chai-jquery/chai-jquery",
+            "jquery-chai": "third-party/chai-jquery/chai-jquery",
 
         },
-        map: {
+        "map": {
             "*": {
-                "underscore": "lodash-private",
-                "lodash":     "lodash-private",
-                "jquery":     "jquery-private",
-                "backbone":   "backbone-private"
+                // Mappings for shimmed libs
+                "underscore": "lodash-local",
+                "lodash":     "lodash-local",
+                "jquery":     "jquery-local",
+                "backbone":   "backbone-local",
+
+                // Mapping for tests
+                "mocha":      "mocha-local",
             }
         },
-        urlArgs: "bust=" + (new Date()).getTime() // cache-busting for development
+        "shim": {
+            "sinon-chai": {
+                "deps": [ "chai" ]
+            },
+            "jquery-chai": {
+                "deps": [ "chai"]
+            }
+        },
+        "urlArgs": "bust=" + (new Date()).getTime() // cache-busting for development
 
     });
 

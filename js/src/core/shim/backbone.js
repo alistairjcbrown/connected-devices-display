@@ -1,8 +1,8 @@
 /**
- *  Lo-Dash
+ *  Backbone
  *
- *  Wrapper file for lo-dash lib
- *  This gets lo-dash off the global scope
+ *  Wrapper file for backbone lib
+ *  This gets backbone off the global scope and sets jquery version
  */
 define([ "jquery", "third-party/backbone/backbone" ], function(jquery, backbone) {
     "use strict";

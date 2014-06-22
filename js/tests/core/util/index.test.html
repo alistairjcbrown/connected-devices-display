@@ -5,25 +5,27 @@
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
     <head>
-            <meta charset="utf-8">
-
-            <title>Test Page</title>
-
-            <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
-
-            <link rel="stylesheet" type="text/css" href="../../../third-party/mocha/mocha.css" media="all">
+        <meta charset="utf-8">
+        <title>Test Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
     </head>
 
     <body>
-         <div id="mocha"></div>
-
-        <script src="../../../third-party/mocha/mocha.js"></script>
         <script>
-            mocha.setup({
-                ui: 'tdd'
-            });
-        </script>
+            window.relative_path = "../../../";
+            window.test_files = [
+                "tests/core/util/check-type.test"
+            ];
 
-        <script data-main="require.config.test.js" src="../../../third-party/requirejs/require.js"></script>
+            // Boot up the test framework
+            (function (root) {
+                var requirejs_path = "third-party/requirejs/require.js",
+                    test_runner = "tests/runner.test.js",
+                    test_script = document.createElement("script");
+                test_script.setAttribute("src", root.relative_path+requirejs_path);
+                test_script.setAttribute("data-main", root.relative_path+test_runner);
+                document.body.appendChild(test_script);
+            })(window);
+        </script>
     </body>
 </html>
