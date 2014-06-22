@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTpvF9AAoJEJEOHi8Q7zzz+4AIAKS5T6zFHEyIWT8IJp4LEA7A
-Or4n8KUNeyM8p0FaEBprkRaHnSvg+qmdiNmnwWBUD5MDtm7kN+sImLK6HczRu/5d
-2qnbxZMl/8B7yia2Rta6KueexT6WgdkShY64BIpXQ5Ww+JQYHIBdHMvRFaLpa3PT
-vDCwGhOq5bNaRYJc0XHrEZ46YpAuoSD1eLEBAUnObC01ixRQrZp2ESioD4z9qXit
-cMep/QeUf1YC2xV3hfFkmRWTwsUAfhUqBtHdZfMs8JlSOy0DMMNxYjM3mKd7LRJt
-pRf6gvSOFg/g2FfG+LT4H6+apS1KvZdVLUqntbvtts+xgqrBSsot1gRaHRNCAZM=
-=jmdo
+iQEcBAABAgAGBQJTpxB5AAoJEJEOHi8Q7zzzN/QH/0LaURb04ASoo0L485CIEu/4
+h7XFeWtP4nsc29A4/7KLMmwHjkUSKqpHCzM2eS57bT7G70dvccIbtgjo8jtLZVPG
+TR/cho+TuLHcsrzPG5/C2l49fIsvDYmQ/VF6eytnXu4GvhDLLneshDQS+swHLC/d
+EOx/ADBJA70y7yOZV+7NBOBWMgCXtzeJbJ465c832NQkWbNRNd5ymt3Ds/f/oI3f
+/AETW0c/lJyLjiIBu6rNHoQCBt7mVegWg8tM0mkedDCgaLQf8ZZ7SPPz2QlZ18Gx
+g+uUaYxNItbiz87VvH3uZxuJG9+w0BqNQP2gkkVPgiF3JyRpxBN8tWQYBfLh688=
+=/x8d
 -----END PGP SIGNATURE-----
 
 ```
@@ -29,7 +29,7 @@ size    exec  file                          contents
 3988            Gruntfile.js                4e64e68e738e55b4ef4700d26939b7207c20ab91d1cd5b9952539c5306d3cfcb
 1081            LICENSE                     0e7bf3c5852cb41c33a213aed24d4321df388f819323e0027c3c91a009429df8
 1494            README.md                   1bf8b592b3f6a7fb3908115be33420723143903fdd3d00eeca5cca51afb43a41
-436             bower.json                  e58f488de5b3f6d7aeab9370bbcb578cfdd5992276051fa2676e353365503bc7
+485             bower.json                  45edb2a715a2af55411adb9ffa1af5e6cb814e7c54d646c8f106cf07a213166b
                 css/                                                                                        
 1098              reset.css                 f96b44c7b969277b79410066c40296ed729b95c6173625b677326736363b7775
 43                style.css                 ba7765fd4c58f9303d6b12e5502414384e6aee95679b0b888764e37b6170af88
@@ -37,9 +37,9 @@ size    exec  file                          contents
 2                 data.json                 44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a
 1046            index.html                  a9b967e04ba01fe15d590825ea80d541f990d0d43b6a572b170ca10acf22ec08
                 js/                                                                                         
-138112            app.min.js                f023dd670696169d9d2fb745ed0ad97c72b5240fb103ef6a33b7d39af2fc3c10
+207460            app.min.js                71844497ad5b65fdfd7c5f70500eb605b552c636a028de73363e24bcda62893d
                   src/                                                                                      
-313                 app.js                  b1affcb7fc52911e349a291c113ab8ab3769cefa98120d550f8104bce3d14cbd
+527                 app.js                  e06fb8e276c2d44f453ed6ff661bcb1a30358e088d64157b6be0a9311df6dd60
                     core/                                                                                   
                       shim/                                                                                 
 505                     backbone.js         e373e39636426f811ea26de7c67e2a3e711abfbad6807d59925a0928379c8fd5
@@ -51,10 +51,12 @@ size    exec  file                          contents
 317                 main.js                 b5a4b4778448978c95914dfd20bf650e2ff30596091b3da97454dd885c3095f7
                     modules/                                                                                
                       example/                                                                              
-544                     index.js            44c1af3f07e70a3891ea23d3759279207bd6d9bcd7e9cf91d3d4ce5a459812bf
-1567                require.config.js       8147d1493c66e62df9b63670f698c44d684adddd4d262c5702474a3404b2a788
+915                     index.js            3114b65b30e0ae8c6760416b76617a5c20c6fee71c600bc4c75168b7fe8c969b
+                        templates/                                                                          
+35                        globals.hbs.html  dd49beb83a1c6182165860457e6794e0b8c84ead5fb11bcf9f2cdb586b67b2f3
+1913                require.config.js       5b1d8e61c88ec33459e68e0caf54ff554252204cd88c56ffd0d3be693b659227
                   tests/                                                                                    
-424                 app.test.js             34f4acff8634d617a7b681ebdbe2c4b7ec4cffe24b9c25add7ca06bbebbc8ed4
+1072                app.test.js             f6e293357e2546ef056371ccc771b4cb73d7b3153e7216428557121ebbe7c9b5
                     core/                                                                                   
                       shim/                                                                                 
 1355                    mocha.js            b459c971c9ee77fa4632ee9e2dda3f06e348d4db1a8b648bd1531a47bdb6d56f

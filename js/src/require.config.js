@@ -13,6 +13,8 @@ define(function() {
             "backbone-local": "src/core/shim/backbone",
 
             // AMD libs
+            "handlebars": "third-party/handlebars/handlebars.amd.min",
+            "hbs":        "third-party/hbs/hbs",
             "check-type": "src/core/util/check-type",
             "modules":    "src/modules",
 
@@ -44,6 +46,16 @@ define(function() {
                 "deps": [ "chai"]
             }
         },
+
+        // Plugins
+        "hbs": {
+            "disableHelpers":    true,
+            "disableI18n":       true,
+            "templateExtension": "hbs.html",
+            // partialsUrl: ''
+        },
+
+        // Development
         "urlArgs": "bust=" + (new Date()).getTime() // cache-busting for development
 
     });

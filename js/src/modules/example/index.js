@@ -1,21 +1,37 @@
 /**
- *  App
+ *  Example
  *
- *  Root application file.
- *  Load main controllers here.
+ *  Example module
+ *  Backbone view which ????
  */
- define([ "check-type", "backbone" ], function(check, backbone) {
+ define([
+    "check-type",
+    "backbone",
+    "hbs!modules/example/templates/globals"
+], function(check, Backbone, global_check) {
     "use strict";
 
-    var Example = function(){};
+    var Example = Backbone.View.extend({
 
-    backbone;
+        render: function() {
+            var output = "",
+                global_variables = [
+                    { name: "jQuery",   symbol: "$" },
+                    { name: "Lo-Dash",  symbol: "_" },
+                    { name: "Backbone", symbol: "Backbone" }
+                ];
 
-    Example.prototype.init = function() {
-        window.console.log("Global jQuery?", check(window.$).is.not("undefined"));
-        window.console.log("Global Lo-Dash?", check(window._).is.not("undefined"));
-        window.console.log("Global Backbone?", check(window.Backbone).is.not("undefined"));
-    };
+            global_variables.forEach(function(global_variable) {
+                 output += global_check({
+                    name: global_variable.name,
+                    present: ""+check(window[global_variable.symbol]).is.not("undefined")
+                 });
+            });
+
+            this.$el.append(output);
+        }
+
+    });
 
     return Example;
 
