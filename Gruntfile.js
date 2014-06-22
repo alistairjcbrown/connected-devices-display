@@ -95,7 +95,7 @@ module.exports = function(grunt) {
                 insertRequire: ['src/main'],
                 wrap: true,
                 preserveLicenseComments: true,
-                optimize: "none",
+                optimize: "uglify",
                 out: "js/app.min.js",
                 useStrict: false,
                 findNestedDependencies: true,
