@@ -77,7 +77,7 @@ module.exports = function(grunt) {
             "options": {
                 "reporter": "Spec",
                 "ui":       "tdd",
-                "log":      true
+                // "log":      true
             }
         }
     };

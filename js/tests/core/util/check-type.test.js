@@ -1,14 +1,12 @@
 define(
 [
     "sinon",
-    "chai",
     "check-type"
 ],
-function (sinon, chai, check) {
+function (sinon, check) {
     "use strict";
 
-    var expect = chai.expect,
-        env;
+    var env;
 
     suite("Check-type", function() {
         setup(function() {

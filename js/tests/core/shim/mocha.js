@@ -25,6 +25,9 @@ define([
     chai.use(sinon_chai);
     chai.use(jquery_chai);
 
+    // Use chai expect bdd api
+    window.expect = chai.expect
+
     // Add in mocha presentation CSS and div
     $("head").append(mocha_css);
     $("body").append(mocha_placeholder);
