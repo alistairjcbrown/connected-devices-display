@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <title>Test Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+    </head>
+
+    <body>
+        <script>
+            // Set relative path to root "js" directory
+            window.relative_path = "../../../";
+
+            // List of test files, paths from root "js" directory
+            window.test_files = [
+                "tests/modules/example/index.test"
+            ];
+
+            // Boot up the test framework
+            (function (root) {
+                var requirejs_path = "third-party/requirejs/require.js",
+                    test_runner = "tests/runner.test.js",
+                    test_script = document.createElement("script");
+                test_script.setAttribute("src", root.relative_path+requirejs_path);
+                test_script.setAttribute("data-main", root.relative_path+test_runner);
+                document.body.appendChild(test_script);
+            })(window);
+        </script>
+    </body>
+</html>
