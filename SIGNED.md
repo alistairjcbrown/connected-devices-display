@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTps+5AAoJEJEOHi8Q7zzzxc4H/j9x5Atf6gaZ5E38zM9Ak0W4
-8RRB754pofQJEuggtbyeyMb4EfQLQHpVDO4BjbTiTPLXlYWGzv+rmOX9D4EmBW+G
-QY+mFx0ufrY2LnheSA8Ojgxow5USpyY+mCkpGoD5dzHg19uaUGFfRvuArC3ilkH1
-+l1dUbWd3SrIa1djD8fZISnzUtCOU2zFNhZYRu0/SkgnuhRipQQ/Dz2sVjLXbak+
-6sTHMk8R5PMPfOtZ/J/csS3Ahi4ZTruNn0K43qR2ePhvH0pkpFRgt5zbQEHGH/C1
-tTiDCwtZ3h/tHg/T3hFYla+XKGcJ18qVPbXfbhmrfLwBJx/v8GD6kUSnmUBP5+g=
-=eSYY
+iQEcBAABAgAGBQJTpvF9AAoJEJEOHi8Q7zzz+4AIAKS5T6zFHEyIWT8IJp4LEA7A
+Or4n8KUNeyM8p0FaEBprkRaHnSvg+qmdiNmnwWBUD5MDtm7kN+sImLK6HczRu/5d
+2qnbxZMl/8B7yia2Rta6KueexT6WgdkShY64BIpXQ5Ww+JQYHIBdHMvRFaLpa3PT
+vDCwGhOq5bNaRYJc0XHrEZ46YpAuoSD1eLEBAUnObC01ixRQrZp2ESioD4z9qXit
+cMep/QeUf1YC2xV3hfFkmRWTwsUAfhUqBtHdZfMs8JlSOy0DMMNxYjM3mKd7LRJt
+pRf6gvSOFg/g2FfG+LT4H6+apS1KvZdVLUqntbvtts+xgqrBSsot1gRaHRNCAZM=
+=jmdo
 -----END PGP SIGNATURE-----
 
 ```
@@ -25,10 +25,11 @@ size    exec  file                          contents
               ./                                                                                            
 36              .bowerrc                    905a917b24f76502d770326c3a38a937971b346bc4183ebb4166f0be160f184e
 59              .gitignore                  9f8511ac0fb40e0c8a42d0d69f6e9436264f23db450d3f96ae32c4a7f432a9c1
+155             .travis.yml                 57c7affd696cdb9ff768952dad5aad45b3dfaa535fd484398e67115e50e80028
 3988            Gruntfile.js                4e64e68e738e55b4ef4700d26939b7207c20ab91d1cd5b9952539c5306d3cfcb
 1081            LICENSE                     0e7bf3c5852cb41c33a213aed24d4321df388f819323e0027c3c91a009429df8
-297             README.md                   8a742659f892fb40ce1aed7e4fae729adbf208ef22f590119837322f1a540e01
-439             bower.json                  c2774d522c319f372224603d6787e72e2b4e7090e0470f3995d37731546d2bda
+1494            README.md                   1bf8b592b3f6a7fb3908115be33420723143903fdd3d00eeca5cca51afb43a41
+436             bower.json                  e58f488de5b3f6d7aeab9370bbcb578cfdd5992276051fa2676e353365503bc7
                 css/                                                                                        
 1098              reset.css                 f96b44c7b969277b79410066c40296ed729b95c6173625b677326736363b7775
 43                style.css                 ba7765fd4c58f9303d6b12e5502414384e6aee95679b0b888764e37b6170af88
@@ -36,9 +37,9 @@ size    exec  file                          contents
 2                 data.json                 44136fa355b3678a1146ad16f7e8649e94fb4fc21fe77e8310c060f61caaff8a
 1046            index.html                  a9b967e04ba01fe15d590825ea80d541f990d0d43b6a572b170ca10acf22ec08
                 js/                                                                                         
-137931            app.min.js                5d98f99ca8c825a8372b745b679017388c388cffc21fbceac65445aac33c9317
+138112            app.min.js                f023dd670696169d9d2fb745ed0ad97c72b5240fb103ef6a33b7d39af2fc3c10
                   src/                                                                                      
-512                 app.js                  bbbfb421130d5bb3434bb702280f83e5cab39129a99df04b37e99fbfeb46344c
+313                 app.js                  b1affcb7fc52911e349a291c113ab8ab3769cefa98120d550f8104bce3d14cbd
                     core/                                                                                   
                       shim/                                                                                 
 505                     backbone.js         e373e39636426f811ea26de7c67e2a3e711abfbad6807d59925a0928379c8fd5
@@ -48,7 +49,10 @@ size    exec  file                          contents
                       util/                                                                                 
 595                     check-type.js       977d15c74ae8daf626109c09382842aac8bbbb3b6da2d7d7e6bafb53c3a1aca3
 317                 main.js                 b5a4b4778448978c95914dfd20bf650e2ff30596091b3da97454dd885c3095f7
-1526                require.config.js       b139226c02d326975c3abf7e26b31b2e09876fbbe11848b0aae0aacaa0bb907a
+                    modules/                                                                                
+                      example/                                                                              
+544                     index.js            44c1af3f07e70a3891ea23d3759279207bd6d9bcd7e9cf91d3d4ce5a459812bf
+1567                require.config.js       8147d1493c66e62df9b63670f698c44d684adddd4d262c5702474a3404b2a788
                   tests/                                                                                    
 424                 app.test.js             34f4acff8634d617a7b681ebdbe2c4b7ec4cffe24b9c25add7ca06bbebbc8ed4
                     core/                                                                                   
@@ -58,8 +62,12 @@ size    exec  file                          contents
 1181                    check-type.test.js  ea710f7749c6822a62b600a3fdbff28cc1d8539153cc661c287ef06c4359ceed
 1313                    index.test.html     560be80813460d80b548fa41130d60dc9b48b010d33bb871138cca9d44162b8f
 1290                index.test.html         313b03c037d6a40f5f6c7fff07f7cdd0a251524b5488ab116f35c8925e8b32cf
+                    modules/                                                                                
+                      example/                                                                              
+1314                    index.test.html     14aa18ea6d392fd14dce8ebaf2fb77a986cec01b79d94dfa7c4d04dc24d1f5cf
+459                     index.test.js       987ea4c9b28e32281eda0796d199ebbaba685ec92d38ec57f9e801645e739b6b
 428                 runner.test.js          8432c17220a726637d8c5ba9e2f1735ab7a4572295ed4c5a228c6475b2924c0c
-332             package.json                013f8688fdcca112fddc670bb1cf077e9a987d6842ec444c16822adb9847723a
+370             package.json                dd0f82a28cca92ece77b2938bb39ceed1d6359b822222f385e0e0acdf900ddaf
 ```
 
 #### Ignore

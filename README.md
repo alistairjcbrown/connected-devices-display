@@ -15,6 +15,8 @@ A basic starting point for building a JS app.
 
 ## Install
 
+To install the dependencies and run the build, you should have `bower` and `grunt` installed.
+
 ```
 npm install   # Install build dependencies
 bower install # Install app dependencies

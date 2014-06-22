@@ -14,6 +14,7 @@ define(function() {
 
             // AMD libs
             "check-type": "src/core/util/check-type",
+            "modules":    "src/modules",
 
             // Testing libs
             "mocha-local": "tests/core/shim/mocha",
