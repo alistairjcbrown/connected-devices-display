@@ -9,5 +9,7 @@ require([ "require.config" ], function() {
     "use strict";
 
     // Now run application
-    require(["src/app"]);
+    require(["src/app"], function(app) {
+        app.init();
+    });
 });

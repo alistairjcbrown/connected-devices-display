@@ -54,15 +54,18 @@ module.exports = function(grunt) {
             "undef":      true,
             "unused":     true,
             "globals": {
-                "_":         true,
+                // Test globals
                 "define":    true,
                 "module":    true,
                 "require":   true,
                 "mocha":     true,
+                "expect":    true,
                 "suite":     true,
                 "test":      true,
                 "setup":     true,
                 "teardown":  true,
+
+                // Env globals
                 "window":    true,
                 "process":   true,
                 "__dirname": true
