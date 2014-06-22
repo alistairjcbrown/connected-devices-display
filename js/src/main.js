@@ -6,8 +6,8 @@
  *  This file shouldn't need edited.
  */
 require([ "require.config" ], function() {
-	"use strict";
+    "use strict";
 
     // Now run application
-	require(["src/app"]);
+    require(["src/app"]);
 });

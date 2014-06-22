@@ -77,29 +77,30 @@ module.exports = function(grunt) {
             "options": {
                 "reporter": "Spec",
                 "ui":       "tdd",
-                "log":      true
+                "log":      true,
+                // "run":      true
             }
         }
     };
 
     requirejs = {
-        compile: {
-            options: {
-                name: "third-party/almond/almond",
-                baseUrl: "js",
-                paths: {
+        "compile": {
+            "options": {
+                "name": "third-party/almond/almond",
+                "baseUrl": "js",
+                "paths": {
                     "require.config": "src/require.config"
                 },
-                mainConfigFile: "js/src/require.config.js",
-                include: ['src/main'],
-                insertRequire: ['src/main'],
-                wrap: true,
-                preserveLicenseComments: true,
-                optimize: "uglify",
-                out: "js/app.min.js",
-                useStrict: false,
-                findNestedDependencies: true,
-                done: function(done, output) {
+                "mainConfigFile": "js/src/require.config.js",
+                "include": ['src/main'],
+                "insertRequire": ['src/main'],
+                "wrap": true,
+                "preserveLicenseComments": true,
+                "optimize": "uglify",
+                "out": "js/app.min.js",
+                "useStrict": false,
+                "findNestedDependencies": true,
+                "done": function(done, output) {
                     var duplicates = require('rjs-build-analysis').duplicates(output);
 
                     if (duplicates.length > 0) {
