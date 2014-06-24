@@ -3,13 +3,13 @@
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.14 (GNU/Linux)
 
-iQEcBAABAgAGBQJTpxB5AAoJEJEOHi8Q7zzzN/QH/0LaURb04ASoo0L485CIEu/4
-h7XFeWtP4nsc29A4/7KLMmwHjkUSKqpHCzM2eS57bT7G70dvccIbtgjo8jtLZVPG
-TR/cho+TuLHcsrzPG5/C2l49fIsvDYmQ/VF6eytnXu4GvhDLLneshDQS+swHLC/d
-EOx/ADBJA70y7yOZV+7NBOBWMgCXtzeJbJ465c832NQkWbNRNd5ymt3Ds/f/oI3f
-/AETW0c/lJyLjiIBu6rNHoQCBt7mVegWg8tM0mkedDCgaLQf8ZZ7SPPz2QlZ18Gx
-g+uUaYxNItbiz87VvH3uZxuJG9+w0BqNQP2gkkVPgiF3JyRpxBN8tWQYBfLh688=
-=/x8d
+iQEcBAABAgAGBQJTqeolAAoJEJEOHi8Q7zzzjUUIAICM2WFvEci69hUHQ4vs4THe
+/pjqjoGnEwZlJEVfE+XjvkaJFHJE+u61COosu/GxujWrDXFdqFUsu28QpGt7j8x3
+DYq54CAP3M3yMIg4plFywZU2awdfhLMdVu1wC8iWQaH28VtRr5+NEcLO5tBHWfOV
+uHJ9L2L/c+jBD21xB1+SiqSkLYwr5toxRaJN/aRpVevq+tQgDJJAIUiHY/RYObti
+lpasCNxndbqtwaor8vi1wue6iIEkQBheeaqGbI06tn4UmSTrpFUKru/ooWVpsXLH
+uoeJiLdGZ1tNezVynz8gXbxauHY+aqLLsHCtSaJEaCjloD62NrPsZLIdlv8rTd0=
+=gwhj
 -----END PGP SIGNATURE-----
 
 ```
@@ -26,9 +26,9 @@ size    exec  file                          contents
 36              .bowerrc                    905a917b24f76502d770326c3a38a937971b346bc4183ebb4166f0be160f184e
 59              .gitignore                  9f8511ac0fb40e0c8a42d0d69f6e9436264f23db450d3f96ae32c4a7f432a9c1
 155             .travis.yml                 57c7affd696cdb9ff768952dad5aad45b3dfaa535fd484398e67115e50e80028
-3988            Gruntfile.js                4e64e68e738e55b4ef4700d26939b7207c20ab91d1cd5b9952539c5306d3cfcb
+4146            Gruntfile.js                6a9b76c5c9ce366944012fd9fce20058569b374d419f58371d551b5eb20bc312
 1081            LICENSE                     0e7bf3c5852cb41c33a213aed24d4321df388f819323e0027c3c91a009429df8
-1494            README.md                   1bf8b592b3f6a7fb3908115be33420723143903fdd3d00eeca5cca51afb43a41
+1613            README.md                   60cb38e70745924848cada7ccaed8807161b3fe716ec5bb6a6abf4fabed291fd
 485             bower.json                  45edb2a715a2af55411adb9ffa1af5e6cb814e7c54d646c8f106cf07a213166b
                 css/                                                                                        
 1098              reset.css                 f96b44c7b969277b79410066c40296ed729b95c6173625b677326736363b7775
@@ -69,7 +69,7 @@ size    exec  file                          contents
 1314                    index.test.html     14aa18ea6d392fd14dce8ebaf2fb77a986cec01b79d94dfa7c4d04dc24d1f5cf
 459                     index.test.js       987ea4c9b28e32281eda0796d199ebbaba685ec92d38ec57f9e801645e739b6b
 428                 runner.test.js          8432c17220a726637d8c5ba9e2f1735ab7a4572295ed4c5a228c6475b2924c0c
-370             package.json                dd0f82a28cca92ece77b2938bb39ceed1d6359b822222f385e0e0acdf900ddaf
+405             package.json                d7adbb1fcc708405bffc510fddb4f2b232688d76d3015cc1c758cab62516c21d
 ```
 
 #### Ignore

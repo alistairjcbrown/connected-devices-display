@@ -43,3 +43,10 @@ grunt test  # Runs only tests
  - Install from bower - `bower install {lib_name} --save`
  - Update `require.config.js` with a reference from lib name to file location
     - If the lib is non-AMD, consider creating a shim fle in `js/src/core/shim` to remove the lib from the global scope
+
+
+## Contact
+
+Twitter @alistairjcbrown
+
+Code signed using keybase as alistairjcbrown. Verify with `keybase dir verify`

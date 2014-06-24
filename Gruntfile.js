@@ -26,7 +26,7 @@ module.exports = function(grunt) {
 
         return base;
     },
-    jshint, mocha_browser, requirejs;
+    jshint, mocha_browser, requirejs, keybase_dir;
 
     // ------
 
@@ -117,11 +117,17 @@ module.exports = function(grunt) {
         }
     };
 
+    keybase_dir = {
+        sign:{},
+        verify:{},
+    };
+
     grunt.initConfig({
         "pkg":          grunt.file.readJSON("package.json"),
         "jshint":       jshint,
         "mocha":        mocha_browser,
-        "requirejs":    requirejs
+        "requirejs":    requirejs,
+        "keybase_dir":  keybase_dir,
     });
 
     // Load Tasks
@@ -129,9 +135,9 @@ module.exports = function(grunt) {
 
     // Define tasks
     grunt.registerTask("lint",    [ "jshint" ]);
-    grunt.registerTask("test",    [ "mocha" ]);
-    grunt.registerTask("go",      [ "lint", "test" ]);
-    grunt.registerTask("build",   [ "go", "requirejs" ]);
+    grunt.registerTask("test",    [ "keybase_dir:verify", "mocha" ]);
+    grunt.registerTask("go",      [ "lint", "mocha" ]);
+    grunt.registerTask("build",   [ "go", "requirejs", "keybase_dir:sign" ]);
     grunt.registerTask("default", [ "go" ]);
 
 };
