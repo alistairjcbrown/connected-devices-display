@@ -134,9 +134,8 @@ module.exports = function(grunt) {
     require("load-grunt-tasks")(grunt);
 
     // Define tasks
-    grunt.registerTask("lint",    [ "jshint" ]);
-    grunt.registerTask("test",    [ "keybase_dir:verify", "mocha" ]);
-    grunt.registerTask("go",      [ "lint", "mocha" ]);
+    grunt.registerTask("test",    [ "keybase_dir:verify", "go" ]);
+    grunt.registerTask("go",      [ "jshint", "mocha" ]);
     grunt.registerTask("build",   [ "go", "requirejs", "keybase_dir:sign" ]);
     grunt.registerTask("default", [ "go" ]);
 

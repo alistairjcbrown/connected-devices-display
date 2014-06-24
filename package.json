@@ -12,6 +12,6 @@
   },
   "private": true,
   "scripts": {
-    "test": "grunt go"
+    "test": "grunt test"
   }
 }
