@@ -1,0 +1,60 @@
+{
+	"connected": [
+		{
+			"device_name": "My PC",
+			"mac_address": "A1:98:BC:76:DE:54",
+			"interface": "wired"
+		},
+		{
+			"device_name": "roku",
+			"mac_address": "A2:98:BC:76:DE:54",
+			"interface": "wired"
+		},
+		{
+			"device_name": "wdtvlive",
+			"mac_address": "A3:98:BC:76:DE:54",
+			"interface": "wired"
+		},
+		{
+			"device_name": "android-phone",
+			"mac_address": "A4:98:BC:76:DE:54",
+			"interface": "wireless"
+		},
+		{
+			"device_name": "ipad",
+			"mac_address": "A5:98:BC:76:DE:54",
+			"interface": "wireless"
+		},
+		{
+			"device_name": "iphone",
+			"mac_address": "A6:98:BC:76:DE:54",
+			"interface": "wireless"
+		}
+	],
+	"disconnected": [
+		{
+			"device_name": "laptop",
+			"mac_address": "A7:98:BC:76:DE:54",
+			"interface": "wireless"
+		},
+		{
+			"device_name": "tv",
+			"mac_address": "A8:98:BC:76:DE:54",
+			"interface": "wired"
+		},
+		{
+			"device_name": "Xbox 360",
+			"mac_address": "A9:98:BC:76:DE:54",
+			"interface": "wireless"
+		},
+		{
+			"device_name": "katy-iphone",
+			"mac_address": "AA:98:BC:76:DE:54",
+			"interface": "wireless"
+		}
+	],
+	"metadata": {
+		"generated_at": 14037398893,
+		"output_interval": 10000
+	}
+}

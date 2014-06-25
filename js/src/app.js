@@ -4,7 +4,13 @@
  *  Root application file.
  *  Load main controllers here.
  */
- define([ "jquery", "modules/example/index" ], function($, Example) {
+ define([
+    "jquery",
+    "modules/connected-devices/index"
+], function(
+    $,
+    ConnectedDevices
+) {
     "use strict";
 
     var app = {};
@@ -16,11 +22,22 @@
             throw new Error("Placeholder element is not available");
         }
 
-        this.example = new Example({
-            el: $app_el.get(0)
-        });
+        // Pull down JSON data
+        var connected_devices = $.getJSON("data/connected-devices.json", { cache: + new Date() });
 
-        this.example.render();
+        $.when(connected_devices)
+         .then(function(connected_devices_data) {
+
+            var connected_devices = new ConnectedDevices({
+                el: $app_el.get(0),
+                data: connected_devices_data
+            });
+
+            connected_devices.render();
+
+        }, function() {
+            window.console.error("An error has occurred requesting init data", arguments);
+        });
 
         return true;
     };

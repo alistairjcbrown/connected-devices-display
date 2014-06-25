@@ -7,20 +7,21 @@
     <head>
             <meta charset="utf-8">
 
-            <title>Basic JS App</title>
+            <title>Display Connected Devices</title>
 
             <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes"/>
 
             <!-- // CSS Reset – http://meyerweb.com/eric/tools/css/reset/ -->
             <link rel="stylesheet" type="text/css" href="css/reset.css" media="all">
+            <link rel="stylesheet" href="js/third-party/bootstrap/dist/css/bootstrap.min.css">
             <link rel="stylesheet" type="text/css" href="css/style.css" media="all">
     </head>
 
     <body>
         <div class="js-app"></div>
         <!-- Development; lazy load with requirejs -->
-        <script data-main="js/src/main" src="js/third-party/requirejs/require.js"></script>
+        <!-- <script data-main="js/src/main" src="js/third-party/requirejs/require.js"></script> -->
         <!-- Production; run combined minified source -->
-        <!-- <script src="js/app.min.js"></script> -->
+        <script src="js/app.min.js"></script>
     </body>
 </html>

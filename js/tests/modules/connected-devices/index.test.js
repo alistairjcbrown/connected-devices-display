@@ -1,14 +1,14 @@
 define(
 [
     "sinon",
-    "modules/example/index"
+    "modules/connected-devices/index"
 ],
-function (sinon, Example) {
+function (sinon, ConnectedDevices) {
     "use strict";
 
     var env;
 
-    suite("Example Module", function() {
+    suite("Connected Devices Module", function() {
         setup(function() {
             env = {};
             env.sb = sinon.sandbox.create();
@@ -19,7 +19,7 @@ function (sinon, Example) {
         });
 
         test("should be a function", function() {
-            expect(Example).to.be.a("function");
+            expect(ConnectedDevices).to.be.a("function");
         });
 
     });

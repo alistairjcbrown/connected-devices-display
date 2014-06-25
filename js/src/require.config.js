@@ -4,7 +4,7 @@ define(function() {
     // Calling require.config in this way is necessary for the build process
     require.config({
 
-        "baseUrl": "./js",
+        "baseUrl": "js",
         "paths": {
             // Shimmed / Global libs
             //"underscore":     "src/core/shim/underscore",
