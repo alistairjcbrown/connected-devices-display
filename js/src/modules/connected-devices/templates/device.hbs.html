@@ -7,8 +7,8 @@
         <div class="image-wrapper">
             <div class="circular image"
                 style="
-                {{#if twitter_handle }}
-                    background-image: url(https://twitter.com/api/users/profile_image?screen_name={{ twitter_handle }}&size=original);
+                {{#if username }}
+                    background-image: url(http://graph.facebook.com/{{ username }}/picture?height=720&amp;width=720);
                 {{else}}
                     background-image: url({{ device_image }});
                 {{/if}}
@@ -28,10 +28,10 @@
                     {{ device_location }}
                 </p>
             {{/if}}
-            {{#if twitter_handle }}
-                <p class="twitter-handle">
-                    <a href="http://www.twitter.com/{{ twitter_handle }}">
-                        @{{ twitter_handle }}
+            {{#if username }}
+                <p class="username">
+                    <a href="http://www.facebook.com/{{ username }}">
+                        @{{ username }}
                     </a>
                 </p>
             {{/if}}

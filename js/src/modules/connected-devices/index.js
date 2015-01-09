@@ -48,7 +48,6 @@
          *
          */
         initialize: function(options) {
-
             var device_list = this._generateDeviceList(options.data);
 
             // Create device collection
@@ -83,6 +82,17 @@
          *
          *
          */
+        update: function(options) {
+            var device_list = this._generateDeviceList(options.data);
+
+            this.collection.reset(device_list);
+            this.render();
+        },
+
+        /*
+         *
+         *
+         */
         destroy: function() {
             _.invoke(this.collection.toArray(), "destroy");
             delete this.collection;
@@ -105,7 +115,8 @@
         _generateDeviceList: function(device_data) {
             var device_list = [];
 
-            _.each(device_data, function(device_type_list, type) {
+            _.each(["connected", "disconnected"], function(type) {
+                var device_type_list = device_data[type];
                 _.each(device_type_list, function(device) {
                     device.connected = (type === "connected");
                     device_list.push(device);

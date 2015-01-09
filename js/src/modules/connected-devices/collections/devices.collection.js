@@ -44,6 +44,11 @@ define([
                     _.extend(model, override_values);
                 }
             }, this);
+        },
+
+        reset: function(models) {
+            this.initialize(models);
+            Backbone.Collection.prototype.reset.apply(this, arguments);
         }
 
     });

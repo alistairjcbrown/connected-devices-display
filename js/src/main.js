@@ -11,5 +11,9 @@ require([ "require.config" ], function() {
     // Now run application
     require(["src/app"], function(app) {
         app.init();
+
+        window.setInterval(function() {
+          app.update();
+        }, 2000);
     });
 });

@@ -47,12 +47,11 @@ define([
             this.templates = args.templates;
 
             // Filter the incoming collection
-            this.collection = new DeviceCollection(
-                args.collection.filter(function(model) {
-                    var mac_address = model.get("mac_address");
-                    return this.filter_conditions.device_list.indexOf(mac_address) !== -1;
-                }, this)
-            );
+            this.collection = this._setupCollection(args.collection);
+
+            args.collection.on("reset", function(collection) {
+                this.collection = this._setupCollection(collection);
+            }.bind(this));
 
             // Data
             this.device_profiles = device_profiles_data;
@@ -63,10 +62,24 @@ define([
          *
          *
          */
+        _setupCollection: function(collection) {
+            return new DeviceCollection(
+                collection.filter(function(model) {
+                    var mac_address = model.get("mac_address");
+                    return this.filter_conditions.device_list.indexOf(mac_address) !== -1;
+                }, this)
+            );
+        },
+
+        /*
+         *
+         *
+         */
         render: function() {
             var heading = this.templates.heading({
                 section_heading: this.section_heading
             });
+            this.$el.html("");
             this.$el.append(heading);
 
             this.collection.each(function(model) {

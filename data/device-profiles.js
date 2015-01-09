@@ -5,15 +5,15 @@ define([], function() {
 
         "A4:98:BC:76:DE:54": {
             "device_name":  "Alistair Brown",
-            "twitter_handle": "alistairjcbrown"
+            "username": "alistairjcbrown"
         },
         "A6:98:BC:76:DE:54": {
             "device_name":  "Claire Magowan",
-            "twitter_handle": "french4cupcake"
+            "username": "littleearthquakes"
         },
         "AA:98:BC:76:DE:54": {
             "device_name":  "Katy Magowan",
-            "twitter_handle": "kmagger"
+            "username": "katy.magowan"
         },
 
         "A2:98:BC:76:DE:54": {

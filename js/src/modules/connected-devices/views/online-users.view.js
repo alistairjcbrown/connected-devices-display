@@ -44,12 +44,25 @@ define([
             this.templates = args.templates;
 
             // Filter the incoming collection
-            this.collection = new DeviceCollection(
-                args.collection.where(this.filter_conditions)
-            );
+            this.collection = this._setupCollection(args.collection);
+
+            args.collection.on("reset", function(collection) {
+                this.collection = this._setupCollection(collection);
+            }.bind(this));
 
             // Data
             this.user_profiles = device_profiles_data;
+        },
+
+
+        /*
+         *
+         *
+         */
+        _setupCollection: function(collection) {
+            return new DeviceCollection(
+                collection.where(this.filter_conditions)
+            );
         },
 
 
@@ -61,6 +74,7 @@ define([
             var heading = this.templates.heading({
                 section_heading: this.section_heading
             });
+            this.$el.html("");
             this.$el.append(heading);
 
             this.collection.each(function(model) {
