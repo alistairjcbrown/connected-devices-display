@@ -7,7 +7,7 @@
     "grunt-contrib-requirejs": "^0.4.4",
     "grunt-keybase-dir": "^0.1.0",
     "grunt-mocha": "^0.4.11",
-    "load-grunt-tasks": "^0.6.0",
+    "load-grunt-tasks": "^2.0.0",
     "rjs-build-analysis": "^0.0.3"
   },
   "private": true,

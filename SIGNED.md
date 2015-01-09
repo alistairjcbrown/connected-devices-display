@@ -4,13 +4,13 @@
 Version: GnuPG/MacGPG2 v2.0.22 (Darwin)
 Comment: GPGTools - https://gpgtools.org
 
-iQEcBAABCgAGBQJUrxkEAAoJEJEOHi8Q7zzz8IwH/3GH3pby3Tw/nvUK0M7AbK3V
-T3XDhGJ5U+/Xw4DGW6T/0jnVgYbb97u105v3TDPsKwbSh5IPVR+rjyp2YY5Dwm5g
-s8jwuPBTHVjAm+xOmxCck5veU4UflL9hkSq2C2y7KCs+Wjx10/3WCkDmiUNGtWL7
-OY6AGj8ywA3osfeUMhWPRgvAVzJpxqkBdZTyeaiZ73pN+RPPPgKJ+n2oF2GxbVly
-V1zSE2aTG/72AAzlqxCGBGDVL+SYQh/snZ6Ci2uAkdLgi//mp8cDe/nmPd/gpChz
-1YW8OrXbbpt3784CA5FDrnTDv07kitQGE+A8y2AXneBRVPtns7mNp/mVXuU1Jqs=
-=OMBe
+iQEcBAABCgAGBQJUryD1AAoJEJEOHi8Q7zzzlEkH/jSzQLBSwx/H2RflL0OQCmFB
+h8S+F5MHoK0Mgm2DyYzomV/mbMYEr23u1KICBi7Eh5GoqV73w2zZtbzCfOo0Sthy
+rEEHyHaJnBLfTJZylPGLkZn0pl0/qOzc71aJdUZjugVp5tIfxqGLKtDkxCw6GgLd
+qfqeklwpFPKEKeBHglbk5MQDTRVJI/3uG11ciyH+QV8Fr9+SmwUBTNv5BI//3ZWI
+xJxH6OMcdp9LXURudYgG7NTUfNpdiSJP2Aixzm0IoaWmCDPgaS9MPMohX6RJBA//
+plcnaqlzijAPgydNv1zN22oHtrF9DmhLIeJRbq8aXMb+FKDOsLpSEC2whW1bOFI=
+=9zoZ
 -----END PGP SIGNATURE-----
 
 ```
@@ -30,7 +30,7 @@ size    exec  file                                   contents
 4096            Gruntfile.js                         f2f15ddc60149e65569811b5c1f98aa0071b4def64b1aeef4245b9d7a79472a1                                                                 
 1081            LICENSE                              0e7bf3c5852cb41c33a213aed24d4321df388f819323e0027c3c91a009429df8                                                                 
 550             README.md                            efb64689a600d96c8939b1e8c6cf6d727e1aca3bb6646e5eb581252584688543                                                                 
-512             bower.json                           d8a6fab0688f9d3670e2ee5d267751762e3abe3a46332a13bfa31e0de614b937                                                                 
+543             bower.json                           a93cae3edf5a95f89364a84c2c287b12f59e8dce6539a71728d6e64145618fd7                                                                 
                 css/                                                                                                                                                                  
 1098              reset.css                          f96b44c7b969277b79410066c40296ed729b95c6173625b677326736363b7775                                                                 
 5769              style.css                          a7ff3191b5c3447b2d319abf90ce4ca8a378e1f12a00fd8e6b7f71a506647aaa                                                                 
@@ -48,7 +48,7 @@ size    exec  file                                   contents
 15995             unknown-user.png                   59fdb3f37684d10c5219edbbfb67cfc0329bd7d988819a780872e30931600fee|57da0f666d48189dbfd93aff87861c84bf7bf138f3a77b8749f7fbfeacd8a32b
 1154            index.html                           7850f9fa90d15d75df956a8d8386da6233ac2d648e3c3599ecc7e802f2c7b0a6                                                                 
                 js/                                                                                                                                                                   
-215666            app.min.js                         1d70c04cdad961e1beb704e342fcfc824fc280afc7412b622c98bb12c6e263b2                                                                 
+221254            app.min.js                         9bbb628ba711dd3dae6b0294d320dd300dbb65a1f04edd2b05083dfd4b7d31a1                                                                 
                   src/                                                                                                                                                                
 1751                app.js                           c6267380329f7a0aebb67b298f7d69c75c68b2ced0724677424cc3d6e5c4a29a                                                                 
                     core/                                                                                                                                                             
@@ -71,7 +71,7 @@ size    exec  file                                   contents
                         views/                                                                                                                                                        
 2665                      online-users.view.js       36360a470163097e920317d11a4862d6956d4fd2d10398c02bfebacfc7f5600b                                                                 
 3026                      streaming-devices.view.js  a3c1bfdec9e5c6d8a9c288eebdbb9dd7b3213a78b4b888c0f0cdaddf8aac8559                                                                 
-1911                require.config.js                54b34350b1e53a7dc3b5b0ba2ea9097ba5573d01d52ab54bc46b27b2cf548f1e                                                                 
+1900                require.config.js                5819b8c85fa97dba4efd31c6f7c67355c0a9407b09a455c60edf9038199ce412                                                                 
                   tests/                                                                                                                                                              
 1072                app.test.js                      f6e293357e2546ef056371ccc771b4cb73d7b3153e7216428557121ebbe7c9b5                                                                 
                     core/                                                                                                                                                             
@@ -86,7 +86,7 @@ size    exec  file                                   contents
 1324                    index.test.html              faf5ed7270d97c15671e6d7bac6e2bd2b93784e229817646ffd9fbf9aae34286                                                                 
 497                     index.test.js                c8e3a9d5d022a80ba25a67dd097183e3648340d5e45f6f32312850581a08cb9f                                                                 
 428                 runner.test.js                   8432c17220a726637d8c5ba9e2f1735ab7a4572295ed4c5a228c6475b2924c0c                                                                 
-407             package.json                         58a1df3e93094079c12548de6b8a883d5c73032a5c814bebcf50da90887d2b60                                                                 
+407             package.json                         90067a329834fc290cafd0ca5c3073caef0c9a96b695a026756213bd48ab544a                                                                 
 ```
 
 #### Ignore

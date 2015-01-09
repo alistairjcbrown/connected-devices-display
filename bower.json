@@ -2,22 +2,22 @@
   "name": "base-js-app",
   "author": "Example Author <hello@example.com>",
   "dependencies": {
-    "check-type": "~0.4.9",
-    "requirejs": "~2.1.14",
-    "almond": "~0.2.9",
+    "check-type": "~0.4.11",
+    "requirejs": "~2.1.15",
+    "almond": "~0.3.0",
     "lodash": "~2.4.1",
     "backbone": "~1.1.2",
-    "jquery": "~2.1.1",
-    "handlebars": "~1.3.0",
-    "hbs": "~0.8.1",
-    "bootstrap": "~3.1.1"
+    "jquery": "~2.1.3",
+    "handlebars": "~2.0.0",
+    "hbs": "~0.11.2",
+    "bootstrap": "~3.3.1"
   },
   "devDependencies": {
-    "chai": "~1.9.1",
-    "mocha": "~1.18.2",
-    "sinonjs-built": "~1.8.2",
-    "sinon-chai": "~2.5.0",
-    "chai-jquery": "~1.2.2"
+    "chai": "~1.10.0",
+    "mocha": "~2.1.0",
+    "sinon": "http://sinonjs.org/releases/sinon-1.12.2.js",
+    "sinon-chai": "~2.6.0",
+    "chai-jquery": "~2.0.0"
   },
   "private": true
 }

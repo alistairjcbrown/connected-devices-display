@@ -20,7 +20,7 @@ define(function() {
 
             // Testing libs
             "mocha-local": "tests/core/shim/mocha",
-            "sinon":       "third-party/sinonjs-built/pkg/sinon",
+            "sinon":       "third-party/sinon/index",
             "chai":        "third-party/chai/chai",
             "sinon-chai":  "third-party/sinon-chai/lib/sinon-chai",
             "jquery-chai": "third-party/chai-jquery/chai-jquery",
